@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:id="@+id/grid"
+        android:background="#e7e7e7"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_height="match_parent">
+    </GridView>
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:layout_marginBottom="70dp"
+        android:elevation="5dp"
+
+        android:src="@mipmap/ic_launcher_setting"
+        app:backgroundTint="@android:color/background_light"
+        app:borderWidth="0dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="130dp"
+        android:visibility="invisible"
+        android:elevation="5dp"
+
+        android:src="@mipmap/ic_launcher_about"
+        app:backgroundTint="@android:color/background_light"
+        app:borderWidth="0dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:src="@drawable/ic_content_add_circle"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp" />
+    </RelativeLayout>

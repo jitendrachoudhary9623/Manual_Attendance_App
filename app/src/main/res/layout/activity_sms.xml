@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".sms_activity"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <EditText
+        android:id="@+id/PRN1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/sendsms"
+        android:layout_toStartOf="@+id/sendsms"
+        android:hint="Admission Number"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PRN1"
+        android:layout_alignStart="@+id/PRN1"
+        android:layout_below="@+id/PRN1"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:elevation="5dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/defaulterContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/sendsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:text="SEND SMS"/>
+
+    <Button
+        android:id="@+id/search_find"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/PRN1"
+        android:layout_alignEnd="@+id/sendsms"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/sendsms"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:text="FIND" />
+
+</RelativeLayout>
+</RelativeLayout>

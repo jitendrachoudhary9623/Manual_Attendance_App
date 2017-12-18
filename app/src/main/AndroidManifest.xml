@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dheeraj.teacher">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_appicon"
+        android:label="Attendane"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".Main_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login" />
+        <activity
+            android:name=".SignUP"
+            android:label="SignUp" />
+        <activity
+            android:name=".AppBase"
+            android:label="Attendance Menu" />
+        <activity
+            android:name=".profile_activity"
+            android:label="Profile"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".Student_Registartion"
+            android:label="Registration"
+            android:parentActivityName=".profile_activity" />
+        <activity
+            android:name=".noteCreate"
+            android:label="Subject"
+            android:parentActivityName=".noteActivity" />
+        <activity
+            android:name=".attendanceActivity"
+            android:label="Attendance"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".defaulter_activity"
+            android:label="Defaulter List"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".sms_activity"
+            android:label="Student Details"
+            android:parentActivityName=".defaulter_activity" />
+        <activity
+            android:name=".Result_activity"
+            android:label="Result"
+            android:parentActivityName=".cgpa_activity" />
+        <activity
+            android:name=".cgpa_activity"
+            android:label="CGPA"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".noteActivity"
+            android:label="Subject"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".scheduler"
+            android:label="Schedular"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".make_schedule"
+            android:label="Schedular"
+            android:parentActivityName=".scheduler" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".About"
+            android:label="About"
+            android:parentActivityName=".AppBase" />
+        <activity
+            android:name=".Edit_Student"
+            android:label="Edit"
+            android:parentActivityName=".AppBase" />
+        <activity android:name=".PDFAcitivity"></activity>
+
+    </application>
+
+</manifest>
